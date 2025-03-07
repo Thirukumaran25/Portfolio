@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;  
+    margin: 5px;
+    padding: 5px; 
+    border-radius: 40px;
+    position: sticky;
+    top: 0;
+}
+.head{display: flex;
+list-style: none;
+gap: 50px;
+margin: 10px;
+padding: 10px;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.title{
+    margin: 16px 0 0 80px;
+}
+
+.head li:hover{background-color: rgb(77, 124, 132);
+    box-shadow: 1px 2px;
+    border: 1px solid rgb(8, 8, 8);
+
+}
+
+/* home section CSS*/
+
+.home{ display: flex;
+    background-color: rgb(57, 149, 92);
+    height: 300px;
+    color: rgb(21, 23, 23);
+    font-size: 30px;
+    padding: 80px;
+}
+
+.home a{
+    border: none;
+    background-color: rgb(199, 14, 73);
+    border-radius: 15px;
+    margin-left: 10px;
+    font-size: 20px;}
+.home a:hover{
+    background-color: blue;
+    box-shadow: 2px 2px rgba(0, 0,0, .2);
+    border: 2px solid red;
+} 
+.home2{
+    margin-left: 150px;
+}
+.home p{
+    color: rgb(227, 148, 148);
+}
+/* education */
+.education{
+     background-color: rgb(173, 234, 231);
+    text-align: center;
+    padding: 20px;
+}
+
+.education h2{
+    background-color: black;
+    color: brown;
+}
+
+/* Skills */
+.skill{
+    background-color: rgb(173, 234, 231);
+}
+
+.skill1{
+    display:grid;
+     grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    column-gap: 70px;
+    /* flex-direction: column; */
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(173, 234, 231);
+    padding: 30px;
+    }
+    .circular{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: conic-gradient(purple 285deg,white 0deg);
+}
+.circular::before{content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #35f705;
+    border-radius: 50%;
+}
+.value{
+    position: relative;
+}
+.front{ height: 100px;
+    width: 200px;
+    border: 2px solid rgb(239, 0, 68);
+    margin-left: 400px;
+    transition: width 2s, height 2s;
+}
+.front:hover,.data:hover,.back:hover{
+    width: 200px;
+    height: 150px;
+}
+.back{ height: 100px;
+    width: 200px;
+    border: 2px solid rgb(239, 0, 68);
+    margin-left: 400px;
+    transition: width 2s, height 2s;
+}
+.data{ height: 100px;
+    width: 200px;
+    border: 2px solid rgb(239, 0, 68);
+    margin-left: 400px;
+    transition: width 2s, height 2s;
+}
+.skill h4{
+    background-color: black;
+    color: white;
+}
+.skill1 div{
+    background-color: rgb(128, 232, 144);
+    list-style: none;
+}
+.skill h3{
+    background-color: coral;
+    text-align: center;
+    width: 600px;
+    margin-left: 340px;
+}
+
+/* work */
+.work {
+    background-color: rgb(173, 234, 231);
+    text-align: center;
+}
+.work h2{background-color: rgb(42, 233, 13);
+width: 600px;
+margin-left: 340px;}
+
+/* About */
+.about{
+    text-align: center;
+    background-color: rgb(173, 234, 231);
+    padding: 20px;
+}
+.about h3{
+    background-color: gold;
+}
+/* footer */
+.contact{
+    background-color: brown;
+    text-align: center;
+    color: azure;
+    height: 140px;
+    padding-top: 10px;
+}
+.contact h2{
+    font-size: 30px;
+}
+i{font-size: 28px;}
+
+@media (max-width:1080px){
+    .home{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        height: fit-content;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .skill{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;}
+    }
